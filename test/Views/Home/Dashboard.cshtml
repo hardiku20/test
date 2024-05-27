@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model test.DbEntities.ViewModels.DashboardViewModel;
+
+<html>
+    <head>
+        <title>My test project</title>
+    </head>
+    <body>
+        <h1 class="text-center">
+            I'm testing
+        </h1>
+
+
+   <ol type="1">
+        @foreach (var items in Model.users)
+        {
+            <li>@items.FirstName</li>
+        }
+   </ol>
+
+
+    </body>
+</html>
