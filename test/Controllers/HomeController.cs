@@ -10,7 +10,7 @@ namespace test.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IAdminServices _adminServices;
-
+       
         public HomeController(ILogger<HomeController> logger, IAdminServices adminServices)
         {
             _logger = logger;
